@@ -1,0 +1,259 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  color: #424242;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0; 
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+ *
+ * Common
+ * 
+ */
+.news_more {
+  float: right;
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+  background-color: #C4C7CF;
+}
+
+.header_inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_logo {
+  height: 90px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header_title {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #212121;
+  font-family: 'FunSized';
+}
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.nav_list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+}
+
+.nav_item {
+  
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+
+}
+
+.nav a {
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  background-color: #555;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+ *
+ * comic
+ *
+ */
+.comic {
+  width: 100%;
+  position: relative;
+  background-image: url("../imagenes/comic.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.comic article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+/*
+ *
+ * Top News
+ *
+ */
+.top-news {
+  max-height: 300px;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+.news_title {
+  font-weight: 300;
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.top-news_item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+}
+
+.top-news_item:before {
+  content: "» ";
+}
+
+.top-news_item:last-child {
+  border-bottom: none;
+}
+
+.top-news_item a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em inherit;
+}
+
+.top-news_item a:hover,
+.top-news_item a:active {
+  text-decoration: underline;
+}
+/*
+ *
+ * Recent News
+ *
+ */
+.recent-news {
+  flex-grow: 1;
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+}
+
+.snippet_thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+}
+
+.snippet_title {
+  font-weight: 500;
+}
+
+.snippet_title a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em inherit;
+}
+
+.snippet_title a:hover,
+.snippet_title a:active {
+  text-decoration: underline;
+}
+/*
+ *
+ * Footer
+ *
+ */
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+/*
+ *
+ * Font
+ *
+ */
+@font-face {
+  font-family: 'FunSized';
+  src: url('../fonts/FunSized.ttf');
+}

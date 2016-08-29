@@ -1,0 +1,13 @@
+<form action="" class="form_register">
+	<h2 class="form_titulo">Registrar</h2>
+	<div class="content_inputs">
+		<input type="text" id="name" name="nombre"required="required" placeholder="Nombre" class="input_half" ng-model="user.nombre" />
+		<input type="text" id="lastName" name="lastName"required="required" placeholder="Apellido" class="input_half" ng-model="user.apellido"/>
+		<input type="email" id="email" name="email"required="required" placeholder="Correo" class="input_complete" ng-model="user.email" />
+		<input type="text" id="user" name="user"required="required" placeholder="Usuario" class="input_half" ng-model="user.usuario" />
+		<input type="password" id="password" name="password"required="required" placeholder="Clave" class="input_half" ng-model="user.clave" />
+		<input type="tel" id="phone" name="phone"required="required" placeholder="Telefono" class="input_complete" ng-model="user.telefono" />
+		<input type="submit" value="Submit" ng-click="submit(user)"/>
+		<p>¿Estas registrado? <a href="#login">Ingresa aqui</a></p>
+	</div>
+</form>

@@ -1,0 +1,23 @@
+#container {
+    padding: 39px 0px;
+}
+.thumb_big
+{
+    height: 199px;
+}
+.comics_list
+{
+    text-align: center;
+}
+.availability
+{
+    padding: 9px;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+.bookThumb
+{
+    height: 149px;
+    padding-right: 21px;
+}

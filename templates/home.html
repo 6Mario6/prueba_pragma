@@ -1,0 +1,36 @@
+<nav id="drawer" class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="">Home</a></li>
+        <li class="nav_item"><a href="#list">Comics</a></li>
+        <li class="nav_item"><a href="">Nuevo</a></li>
+        <li class="nav_item"><a href="#">Log out</a></li>
+      </ul>
+</nav>
+<main>
+      <section class="content">
+        <section class="comic">
+          <article class="description">
+            <h2>Nuevos super heroes!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </article>
+        </section>
+		<section class="news recent-news">
+          <h2 class="news_title">Nuevos Comics <a href="#" class="news_more">+ mas</a></h2>
+          <ul ng-repeat="heroe in heroes">
+              <li class="snippet">
+              <img class="snippet_thumbnail" ng-src="{{heroe.thumb}}" >
+              <h3 class="snippet_title"><a href="#">{{heroe.title | uppercase}}</a></h3>
+              <p>{{heroe.review}}
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contactenos</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </footer>
+</main>

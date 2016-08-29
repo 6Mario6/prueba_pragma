@@ -1,0 +1,27 @@
+<nav id="drawer" class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="#home">Home</a></li>
+        <li class="nav_item"><a href="">Comics</a></li>
+        <li class="nav_item"><a href="">Nuevo</a></li>
+        <li class="nav_item"><a href="#">Log out</a></li>
+      </ul>
+</nav>
+<h2>Lista de Comics</h2>
+<input type="text" placeholder="Buscar comic" class="form-control" ng-model="search">
+ 
+<div class="">
+    <div class="comics_list">
+        <div  ng-repeat="comic in comics | orderBy:'name':true | filter:search">
+            <h2>{{comic.name | uppercase}}</h2>
+            <p>
+                <img ng-src="{{comic.thumb}}" class="thumb_big">
+            </p>
+            <p>{{comic.review | limitTo:99}}...</p>
+            <p>
+                <a ng-href="#/comic/{{comic.id}} ">Informacion</a>
+                <span class="label label-warning availability">Cantidad ({{comic.availability}})</span>
+                
+            </p>
+        </div>
+    </div>
+</div>
